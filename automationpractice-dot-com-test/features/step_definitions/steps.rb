@@ -7,7 +7,7 @@ Given(/^I Open automationpractice.com login page$/) do
 end
 
 When(/^I enter all required data for registering$/) do 	
-	driver.find_element(:xpath,"//input[@id='email_create']").send_keys("dedy9@dedy.com")
+	driver.find_element(:xpath,"//input[@id='email_create']").send_keys("dedy10@dedy.com")
 	driver.find_element(:xpath,"//button[@id='SubmitCreate']/span").click
 	sleep(5)
 	driver.find_element(:xpath,"//input[@id='id_gender1']").click
@@ -164,7 +164,7 @@ When("I purchase item as registered user") do
 	driver.find_element(:xpath,"//img[@alt='Faded Short Sleeve T-shirts']").click
 	driver.find_element(:xpath,"//p[@id='add_to_cart']/button/span").click
 	sleep(10)
-	driver.find_element(:xpath,"//div[@id='layer_cart']/div/div[2]/div[4]/a/span").click
+	driver.find_element(:xpath,"//div[@id='layer_cart']/div/div[2]/div[4]/a").click #
 	sleep(5)
 	driver.find_element(:xpath,"//div[@id='center_column']/p[2]/a/span").click
 	sleep(5)
