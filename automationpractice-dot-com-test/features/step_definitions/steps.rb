@@ -130,7 +130,7 @@ When("I purchase item as unregistered user") do
 	driver.find_element(:xpath,"//img[@alt='Faded Short Sleeve T-shirts']").click
 	driver.find_element(:xpath,"//p[@id='add_to_cart']/button/span").click
 	sleep(10)
-	driver.find_element(:xpath,"//div[@id='layer_cart']/div/div[2]/div[4]/a/span").click
+	driver.find_element(:xpath,"//div[@id='layer_cart']/div/div[2]/div[4]/a").click
 	#driver.find_element(:xpath,"").send_keys("")
 	#driver.find_element(:xpath,"").send_keys("")
 end
