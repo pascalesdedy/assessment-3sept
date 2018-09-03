@@ -13,14 +13,14 @@ end
 Then(/^I should redirected to our store page$/) do
 	check = driver.find_element(:xpath,"//div[@id='center_column']/h1").text
 	if check == "OUR STORE(S)!"
-	puts "on store"
+	driver.save_screenshot('screenshot1.png')
 	end
 end
 
 And(/^The google map is displayed properly$/) do
 	map_text = driver.find_element(:xpath,"//div[@id='map']/div[2]/div[2]/span").text
 	if map_text == "This page can't load Google Maps correctly."
-		driver.save_screenshot('screenshot.png')
+	driver.save_screenshot('screenshot2.png')
 	end
 end
 	
@@ -36,6 +36,6 @@ end
 
 Then(/^I am the facebook page widget is displayed$/) do
 	if driver.find_element(:xpath,"//div[@id='facebook_block']").displayed?
-		driver.save_screenshot('screenshot.png')
+	driver.save_screenshot('screenshot.png')
 	end
 end
