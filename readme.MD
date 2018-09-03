@@ -1,8 +1,9 @@
 ### Assessment Test, september 3rd,2018
 This repository contains:
 1. Test Scnario and Test Cases for testing automationpractice.com
-2. Ruby-Selenium-Cucumber-Gherkin test script
-3. Katalon Project files for testing automationpractice.com
+2. Bugs on automationpractice.com
+3. Ruby-Selenium-Cucumber-Gherkin test script
+4. Katalon Project files for testing automationpractice.com
 
 ### Ruby-Selenium-Cucumber-Gherkin test script
 Requirements:
